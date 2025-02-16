@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-.active{
+nav > .active{
     color: yellow;
 }
 .hovEffect:hover{
