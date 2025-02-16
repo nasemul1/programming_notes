@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.active{
+    color: yellow;
+}
+.hovEffect:hover{
+    transform: scaleX(1.2);
+}
