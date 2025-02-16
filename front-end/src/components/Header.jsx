@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 function Header() {
 
-    const [visible, setVisible] = useState(true);
+    const [visible, setVisible] = useState(false);
 
 
 
@@ -27,14 +27,14 @@ function Header() {
                     </div>
                     {visible &&
                         <div className=" bg-blue-600 absolute z-2 h-screen w-screen right-0 top-0 flex flex-col transition ease-in-out duration-[2s]">
-                            <button className="w-full flex justify-end p-4" onClick={()=>{ setVisible(! visible)}}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="size-6">
+                            <button className="w-full flex justify-end p-4" onClick={()=>{ setVisible(! visible)}}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="White" className="size-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                             </svg>
                             </button>
-                            <NavLink className="p-3 border-b hover:bg-white hover:text-blue-600 ease-in-out duration-300">Home</NavLink>
-                            <NavLink className="p-3 border-b hover:bg-white hover:text-blue-600 ease-in-out duration-300">Courses</NavLink>
-                            <NavLink className="p-3 border-b hover:bg-white hover:text-blue-600 ease-in-out duration-300">Problem Solving</NavLink>
-                            <NavLink className="p-3 border-b hover:bg-white hover:text-blue-600 ease-in-out duration-300">About</NavLink>
+                            <NavLink className="hov-effect p-3 border-b hover:bg-white hover:text-blue-600 ease-in-out duration-300">Home</NavLink>
+                            <NavLink className="hov-effect p-3 border-b hover:bg-white hover:text-blue-600 ease-in-out duration-300">Courses</NavLink>
+                            <NavLink className="hov-effect p-3 border-b hover:bg-white hover:text-blue-600 ease-in-out duration-300">Problem Solving</NavLink>
+                            <NavLink className="hov-effect p-3 border-b hover:bg-white hover:text-blue-600 ease-in-out duration-300">About</NavLink>
                         </div>
                     }
                 </nav>
