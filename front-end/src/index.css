@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
 nav > .active{
-    color: yellow;
-}
-.hovEffect:hover{
-    transform: scaleX(1.2);
+    color: #155dfc;
 }
